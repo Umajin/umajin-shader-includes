@@ -1,0 +1,38 @@
+{
+	"name":"Shader Uniforms",
+	"description":"Example code showing how global shader uniforms can be used.",
+	"author":"Richard Rountree",
+	"copyright_text":"Umajin Inc 2021",
+	"date":"2021-03-30",
+
+	"type":"surface",
+
+	"fx":"shader_uniforms.fx",
+	"glsl_vs":"shader_uniforms_vs.glsl",
+	"glsl_fs":"shader_uniforms_fs.glsl",
+	"vulkan_vs":"shader_uniforms_vert.sprv",
+	"vulkan_fs":"shader_uniforms_frag.sprv",
+
+	"shader_uniforms" : [
+		{
+			"type" : "float",
+			"name" : "uv_scale"
+		},
+		{
+			"type" : "float2",
+			"name" : "uv_offset"
+		},
+		{
+			"type" : "float3",
+			"name" : "pos_shift"
+		},
+		{
+			"type" : "float4",
+			"name" : "color_shift"
+		},
+		{
+			"type" : "texture",
+			"name" : "extra_texture"
+		}
+	]
+}
