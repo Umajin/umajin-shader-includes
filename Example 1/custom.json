@@ -1,0 +1,21 @@
+{
+   # Required, name used to reference this effect from JS
+   "name":"Custom Invert",
+
+   # Optional extras for reference.
+   "description":"Example shader showing how to invert diffuse color",
+   "author":"Richard Rountree",
+   "copyright_text":"Umajin Inc 2021",
+   "date":"2020-03-30",
+
+   # Shader type, surface or post.  surface for forward rendering, post for post processing effects
+   "type":"surface", # surface or post, the type of shader
+
+   # Shader filenames
+   "fx":"custom.fx", # DirectX shader file in fx format
+   #"fxc":"custom.fxc", # Optional, use compiled shader file instead of fx file
+   "glsl_vs":"custom_vs.glsl", # OpenGL vertex shader file
+   "glsl_fs":"custom_fs.glsl", # OpenGL fragment shader file
+   "vulkan_vs":"custom_vert.sprv", # Vulkan vertex shader file
+   "vulkan_fs":"custom_frag.sprv", # Vulkan fragment shader file
+}
