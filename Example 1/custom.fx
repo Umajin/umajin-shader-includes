@@ -16,6 +16,7 @@ cbuffer cbChangesOnResize
 cbuffer cbChangesEveryObject
 {
    matrix World;
+   float4 Tint;
 };
 
 struct VS_OUTPUT
