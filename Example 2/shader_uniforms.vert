@@ -1,6 +1,6 @@
 #version 450
 #extension GL_GOOGLE_include_directive : enable
-#include "vulkan_common.glsl"
+#include "../vulkan_common.glsl"
 
 VERTEX_INPUT
 
