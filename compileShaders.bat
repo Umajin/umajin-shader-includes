@@ -8,5 +8,7 @@ fxc /nologo /O3 /T fx_5_0 /Fo "Example 1/custom.fxc" "Example 1/custom.fx"
 
 fxc /nologo /O3 /T fx_5_0 /Fo "Example 2/shader_uniforms.fxc" "Example 2/shader_uniforms.fx"
 
+%VK_SDK_PATH%/Bin/glslangValidator.exe -V "ShaderToy Example/shader_toy.vert" -o "ShaderToy Example/shader_toy_vert.sprv"
+%VK_SDK_PATH%/Bin/glslangValidator.exe -V "ShaderToy Example/shader_toy.frag" -o "ShaderToy Example/shader_toy_frag.sprv"
 
 pause
