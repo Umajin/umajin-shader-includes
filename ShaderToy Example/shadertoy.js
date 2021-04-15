@@ -8,7 +8,7 @@ function shaderToy_onInit(width, height)
 	renderkitCameraUpdateEye(rk, 4,4,4)
 
 	var id = renderkitShapeCreate(rk, "")
-	setData(rk, "shape_id", "id")
+	setData(rk, "shape_id", id)
 	renderkitShapeFilled(rk, id, true)
 	renderkitShapeUpdateEffect(rk, id, "shader_toy")
 	shaderUpdateUniformTexture("shader_toy", "iChannel0", "images/button_01_default_9.png")
