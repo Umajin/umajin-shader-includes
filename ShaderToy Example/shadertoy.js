@@ -26,6 +26,7 @@ function shaderToy_onResize(width, height)
 	var id = getData(rk, "shape_id")
 
 	renderkitShapeClear(rk, id)
+	renderkitShapeStrokeWidth(rk, id, 0)
 	renderkitShapeDoMove(rk, id, 0, 0)
 	
 	renderkitShapeDoLine(rk, id, 0, 0)
