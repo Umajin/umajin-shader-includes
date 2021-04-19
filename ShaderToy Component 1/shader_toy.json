@@ -1,0 +1,64 @@
+{
+   "name":"shader_toy",
+
+   "description":"ShaderToy example shader",
+   "author":"Richard Rountree",
+   "copyright_text":"Umajin Inc 2021",
+   "date":"2020-03-30",
+
+   "type":"surface",
+
+   "fx":"custom.fx",
+   
+   "glsl_vs":"shader_toy_vs.glsl",
+   "glsl_fs":"shader_toy_fs.glsl",
+   "vulkan_vs":"shader_toy_vert.sprv",
+   "vulkan_fs":"shader_toy_frag.sprv",
+
+   "shader_uniforms" : [
+      {
+         "type" : "float",
+         "name" : "umajin_time"
+      },
+      {
+         "type" : "float2",
+         "name" : "umajin_window_size"
+      },
+      {
+         "type" : "float3",
+         "name" : "umajin_cursor"
+      },
+      {
+         "type" : "float3",
+         "name" : "background_color"
+      },
+      {
+         "type" : "float3",
+         "name" : "ring_color"
+      },
+      {
+         "type" : "float3",
+         "name" : "ball_color"
+      },
+      {
+         "type" : "float",
+         "name" : "ring_thickness"
+      },
+      {
+         "type" : "texture",
+         "name" : "iChannel0"
+      },
+      {
+         "type" : "texture",
+         "name" : "iChannel1"
+      },
+      {
+         "type" : "texture",
+         "name" : "iChannel2"
+      },
+      {
+         "type" : "texture",
+         "name" : "iChannel3"
+      }
+   ]
+}
