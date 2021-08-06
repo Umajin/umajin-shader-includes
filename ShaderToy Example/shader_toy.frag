@@ -15,13 +15,18 @@ layout(std140, set = 2, binding = 0) uniform CustomUniform
 	layout(offset = 32) vec3  umajin_cursor;
 } customUniform;
 
+layout(set = 2, binding = 1) uniform texture2D ichannel0;
+layout(set = 2, binding = 2) uniform texture2D ichannel1;
+layout(set = 2, binding = 3) uniform texture2D ichannel2;
+layout(set = 2, binding = 4) uniform texture2D ichannel3;
+
 #define iTime customUniform.umajin_time
 #define iResolution customUniform.umajin_window_size
 #define iMouse customUniform.umajin_cursor
-#define iChannel0 sampler2D(other_tex[0], samp)
-#define iChannel1 sampler2D(other_tex[1], samp)
-#define iChannel2 sampler2D(other_tex[2], samp)
-#define iChannel3 sampler2D(other_tex[3], samp)
+#define iChannel0 sampler2D(ichannel0, samp)
+#define iChannel1 sampler2D(ichannel1, samp)
+#define iChannel2 sampler2D(ichannel2, samp)
+#define iChannel3 sampler2D(ichannel3, samp)
 
 
 //-----------------------------------------------------------------------------

@@ -8,6 +8,6 @@ layout(location = 0) out vec2 outTex;
 
 void main()
 {
-	gl_Position = ubo.proj * ubo.view * dynamicUBO.world * vec4(inPosition, 1.0);
+	gl_Position = Projection * View * World * vec4(inPosition, 1.0);
 	outTex = inTexCoord;
 }

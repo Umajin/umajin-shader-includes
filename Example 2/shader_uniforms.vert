@@ -17,6 +17,6 @@ layout(location = 0) out vec2 outTex;
 void main()
 {
 	vec4 model_pos = vec4(inPosition + customUniform.pos_shift, 1);
-	gl_Position = ubo.proj * ubo.view * dynamicUBO.world * model_pos;
+	gl_Position = Projection * View * World * model_pos;
 	outTex = inTexCoord;
 }
