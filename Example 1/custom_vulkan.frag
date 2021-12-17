@@ -10,6 +10,6 @@ layout(location = 0) out vec4 outColor;
 
 void main()
 {
-	outColor = texture(sampler2D(textures[DIFFUSE_INDEX], samp), inTex);
+	outColor = texture(sampler2D(DiffuseMap, samp), inTex);
 	outColor.rgb = vec3(1,1,1) - outColor.rgb;
 }
